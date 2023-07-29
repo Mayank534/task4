@@ -4,7 +4,7 @@ async function main() {
   await ethers.getContractFactory('Election');
   const [deployer] = await ethers.getSigners();
   console.log('Deploying the Election contract with the account:', deployer.address);
-  const candidateNames = ['PRATHAM SAHU', 'DEVANSH JAIN', 'RAHUL JHA','RIDIN DATTA'];
+  const candidateNames = ['Candidate1', 'Candidate2', 'Candidate3','Candidate4'];
 
   const Election = await ethers.getContractFactory('Election');
   const election = await Election.deploy(candidateNames);
