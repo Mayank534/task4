@@ -26,9 +26,11 @@ The file starts from index.html where one gets the GYMKHANA voting page
 You need a metamask account to connect with it.
 
 click on the connect to metamask account and the metamask extention will pop up 
+
 ![alt text](https://i.ibb.co/fXSQh6j/image.png)
 
 once you have connected it will display a command promt saying you are connected
+
 ![alt text](https://i.ibb.co/0q4Yt0F/image.png)
 
 Now you will be directed to the voting page.
