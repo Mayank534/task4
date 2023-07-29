@@ -19,7 +19,7 @@ connectButton.onclick = async function () {
     } else {
       // User is connected, redirect to election.html
       window.alert("Successfully connected to MetaMask Wallet.");
-      window.location.href = "election.html";
+      window.location.href = "election1.html";
     }
   } catch (error) {
     console.error("Error connecting to MetaMask:", error);
