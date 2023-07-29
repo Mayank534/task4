@@ -115,4 +115,23 @@ label {
   button:hover {
     background-color: #45a049;
   }
-  
+  /* ... (existing CSS styles) ... */
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid white;
+  padding: 8px;
+  text-align: center;
+  color: white;
+}
+
+th {
+  background-color: #1f5f52;
+}
+
+/* ... (rest of the CSS styles) ... */

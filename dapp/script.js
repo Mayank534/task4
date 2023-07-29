@@ -2,7 +2,14 @@ import { ethers } from "./ethers.js";
 
 const connectButton = document.getElementById('connectButton');
 const registerButton = document.getElementById('registerButton');
+const standingsTable = document.getElementById('standingsTable');
 
+const candidateData = [
+  { name: 'Candidate 1', votes: 10 },
+  { name: 'Candidate 2', votes: 7 },
+  { name: 'Candidate 3', votes: 15 },
+  { name: 'Candidate 4', votes: 5 },
+];
 // Check if MetaMask exists
 if (typeof window.ethereum !== 'undefined') {
   console.log('MetaMask is installed!');
@@ -44,4 +51,29 @@ registerButton.onclick = async function () {
     console.error("Error connecting to MetaMask:", error);
     alert("An error occurred while registering with MetaMask. Please try again.");
   }
+  updateStandingsTable(candidateData);
 };
+function updateStandingsTable(data) {
+  // Clear the existing table content
+  standingsTable.innerHTML = `
+    <tr>
+      <th>Candidate Name</th>
+      <th>Number of Votes</th>
+    </tr>
+  `;
+
+  // Loop through the candidate data and add rows to the table
+  data.forEach(candidate => {
+    const row = document.createElement('tr');
+    const nameCell = document.createElement('td');
+    const votesCell = document.createElement('td');
+
+    nameCell.textContent = candidate.name;
+    votesCell.textContent = candidate.votes;
+
+    row.appendChild(nameCell);
+    row.appendChild(votesCell);
+
+    standingsTable.appendChild(row);
+  });
+}
