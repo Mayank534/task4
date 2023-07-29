@@ -13,7 +13,7 @@ The smart contract has been written in solidity and has the following functional
  - It also contains class **Voters** that contain information about voters and have attributes _registered_, _voted_, _candidateVotes_.
    - _registered_ is a bool function used to kep track of whether the voter is registered or not.
    * _voted_ is a bool function to keep track of whether the voter has already voted or not.
-   * _candidateVotes_ is an array which takes indexes of three candidates as an input and assign 5,3 and 1 votes to to first ,second and third entry repectively.
+   * _candidateVotes_ is an array which takes indexes of three candidates as an input and assign 5,3 and 1 votes to to first,second and third entry repectively.
 
  - Next I have created a constructer which is called by owner of contract to register the candidates
  - Then there is function *registerVoter* which is called by voter to register himself to enable him to vote. It forsees that the caller is not already registered.
@@ -21,30 +21,33 @@ The smart contract has been written in solidity and has the following functional
  - Then there is a function *winningCandidate* which on calling calculates to total votes and returns the index of winning candidate.
  - The last function is *winningCandidateName* which reveals the name of winning candidate.
 
- ## Front End
+
+## Front End
 
 The file starts from index.html where one gets the GYMKHANA voting page
 
 You need a metamask account to connect with it.
 
 click on the connect to metamask account and the metamask extention will pop up 
-![alt text](https://i.ibb.co/fXSQh6j/image.png)
+![alt text](https://imgur.com/GcEdOa2.jpg)
 
 once you have connected it will display a command promt saying you are connected
-![alt text](https://i.ibb.co/0q4Yt0F/image.png)
+![alt text](https://imgur.com/XRDSWKK.jpg)
 
 Now you will be directed to the voting page.
 
-![alt text](https://i.ibb.co/D51qjDL/image.png)
+![alt text](https://imgur.com/rgwaPKz.jpg)
 
 The voting page consists of 4 candidates(can be changed) wherein the images are responsive. You have to enter the indexes of the candidates you want to vote in order
 According to our contract the first index will have 5 points second 3 and third 1.
 You will not be able to enter if the index excess the number of candidates.
 
-![alt text](https://i.ibb.co/4RbdrVY/Whats-App-Image-2023-07-29-at-16-04-28.jpg)
+![alt text](https://imgur.com/A2ltjyR.jpg)
 
 
 When entered the indexes, the user can register themselves as votes, this will allow the voter to vote only once and the account should be verified in order to vote. The prompts are added in the election.sol file.
 
-![alt text](https://i.ibb.co/6D3Db5J/image.png)
-when voted the standing of the candidates will be refreshed and the name of the candidatesand the total number of vote will be displayed
+![alt text](https://imgur.com/yq7a6Vl.jpg)
+when voted the standing of the candidates will be refreshed and the name of the candidates and the total number of vote will be displayed
+
+
