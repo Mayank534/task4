@@ -2,7 +2,7 @@
 
 In this assignment we were asked to create a DApp for conducting Student Gymkhana Elections at our campus. Mayank and Shivansh have collaborated together to create the solution of this final assignment. 
 
-The final website has been hosted on this link: exquisite-fenglisu-cbf03d.netlify.app. In any case , if this link doesn't work one can run the index.html file itself from the repo use the website.
+The final website has been hosted on this link:[ exquisite-fenglisu-cbf03d.netlify.app.](https://venerable-croquembouche-6369a5.netlify.app/) In any case , if this link doesn't work one can run the index.html file itself from the repo use the website.
 
 #### The following describes how this submitted workspace works:
 
