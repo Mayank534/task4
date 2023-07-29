@@ -17,7 +17,9 @@ The smart contract has been written in solidity and has the following functional
 
  - Next I have created a constructer which is called by owner of contract to register the candidates
  - Then there is function *registerVoter* which is called by voter to register himself to enable him to vote. It forsees that the caller is not already registered.
- - Then there 
+ - Then there is *castVote* function which gives voter a option to choose 3 candidates from given options and give them a priority order 1,2 and 3 which are given 5,3 and 1 votes respectively.
+ - Then there is a function *winningCandidate* which on calling calculates to total votes and returns the index of winning candidate.
+ - The last function is *winningCandidateName* which reveals the name of winning candidate.
 
  ## Front End
 
@@ -26,11 +28,9 @@ The file starts from index.html where one gets the GYMKHANA voting page
 You need a metamask account to connect with it.
 
 click on the connect to metamask account and the metamask extention will pop up 
-
 ![alt text](https://i.ibb.co/fXSQh6j/image.png)
 
 once you have connected it will display a command promt saying you are connected
-
 ![alt text](https://i.ibb.co/0q4Yt0F/image.png)
 
 Now you will be directed to the voting page.
