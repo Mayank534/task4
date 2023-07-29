@@ -12,7 +12,7 @@ async function connectToMetaMask() {
         if (accounts.length > 0) {
           console.log("Successfully connected to MetaMask!");
           window.alert("Successfully connected to MetaMask Wallet.");
-          window.location.href = "next_page.html"; // Replace 'next_page.html' with your desired page
+          window.location.href = "election1.html"; 
         } else {
           console.error("MetaMask is not connected.");
         }

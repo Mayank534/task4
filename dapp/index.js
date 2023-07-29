@@ -11,6 +11,6 @@ const provider = new ethers.providers.Web3Provider(window.ethereum);
 document.getElementById('connect').onclick = async function () {
   await provider.send("eth_requestAccounts", []);
   window.alert("Sucessfully connected to MetaMask Wallet.")
-  window.location.href="election.html";
+  window.location.href="election1.html";
 
 }
